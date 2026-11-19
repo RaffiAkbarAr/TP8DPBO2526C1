@@ -13,8 +13,9 @@ Program ini dirancang menggunakan konsep pemrograman berorientasi objek (OOP) da
 ### A. Struktur folder dan Arsitektur (MVC)
 
 ```
-├── config.php                  # Konfigurasi koneksi database
-├── db_bioskop                  # database yang dipakai        
+├── assets/                     # Berkas statis CSS (styling tampilan)
+│   └── style.css
+├── config.php                  # Konfigurasi koneksi database             
 ├── index.php                   # Entry point utama (Halaman daftar Film)
 ├── genre.php                   # Entry point untuk halaman Genre
 ├── sutradara.php               # Entry point untuk halaman Sutradara
@@ -30,7 +31,7 @@ Program ini dirancang menggunakan konsep pemrograman berorientasi objek (OOP) da
 │   ├── Genre.php               # Model CRUD tabel genre
 │   └── Sutradara.php           # Model CRUD tabel sutradara
 │
-├── templates/                  # Berkas HTML murni beserta CSS (UI/UX)
+├── templates/                  # Berkas HTML template antarmuka
 │   ├── genre.html              
 │   ├── index.html              # Template HTML untuk halaman Film
 │   └── sutradara.html          
@@ -131,8 +132,6 @@ Basis data `db_bioskop` terdiri dari tiga tabel yang saling berelasi:
 
 ## 3. Dokumentasi
 
-### A. Fitur Kelola Sutradara (`sutradara.php`)
-
 1. **Tambah Sutradara**
    * *Pengisian Formulir Tambah Sutradara:*
      ![Form Tambah Sutradara](Dokumentasi/Tambah%20Sutradara1.png)
@@ -149,10 +148,6 @@ Basis data `db_bioskop` terdiri dari tiga tabel yang saling berelasi:
    * *Data Sutradara Berhasil Dihapus dari Tabel:*
      ![Hapus Sutradara](Dokumentasi/deletesutradara.png)
 
----
-
-### B. Fitur Kelola Genre (`genre.php`)
-
 1. **Tambah Genre**
    * *Pengisian Formulir Tambah Genre:*
      ![Form Tambah Genre](Dokumentasi/Tambah%20genre1.png)
@@ -167,9 +162,6 @@ Basis data `db_bioskop` terdiri dari tiga tabel yang saling berelasi:
    * *Data Genre Berhasil Dihapus dari Tabel:*
      ![Hapus Genre](Dokumentasi/delete%20genre.png)
 
----
-
-### C. Fitur Kelola Film (`index.php`)
 
 1. **Tambah Film**
    * *Pengisian Formulir Tambah Film (Relasi Dropdown Sutradara & Genre):*

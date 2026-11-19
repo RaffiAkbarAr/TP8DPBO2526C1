@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Prafilm - Genre</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">Prafilm</div>
+        <div class="nav-links">
+            <a href="index.php">Film</a>
+            <a href="genre.php" class="active" style="color: white;">Genre</a>
+            <a href="sutradara.php">Sutradara</a>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="form-card">
+            <div class="form-header">TITLE_FORM</div>
+            <div class="form-body">
+                <form method="POST" action="genre.php">
+                    <input type="hidden" name="id" value="VALUE_ID">
+                    <div class="form-group">
+                        <label>Nama Genre</label> 
+                        <input type="text" name="nama_genre" value="VALUE_NAMA" required>
+                    </div>
+                    <button type="submit" name="BTN_ACTION" class="btn-submit">BTN_TEXT</button>
+                    BTN_CANCEL
+                </form>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header">Genre List</div>
+            <div class="table-body">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                    DATA_GENRE
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

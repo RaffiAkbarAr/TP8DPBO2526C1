@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Prafilm - Sutradara</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">Prafilm</div>
+        <div class="nav-links">
+            <a href="index.php">Film</a>
+            <a href="genre.php">Genre</a>
+            <a href="sutradara.php" class="active" style="color: white;">Sutradara</a>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="form-card">
+            <div class="form-header">TITLE_FORM</div>
+            <div class="form-body">
+                <form method="POST" action="sutradara.php">
+                    <input type="hidden" name="id" value="VALUE_ID">
+                    <div class="form-group">
+                        <label>Nama Sutradara</label> 
+                        <input type="text" name="nama_sutradara" value="VALUE_NAMA" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Negara</label> 
+                        <input type="text" name="negara" value="VALUE_NEGARA" required>
+                    </div>
+                    <button type="submit" name="BTN_ACTION" class="btn-submit">BTN_TEXT</button>
+                    BTN_CANCEL
+                </form>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header">Sutradara List</div>
+            <div class="table-body">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Sutradara</th>
+                        <th>Negara</th>
+                        <th>Actions</th>
+                    </tr>
+                    DATA_SUTRADARA
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

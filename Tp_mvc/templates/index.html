@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Prafilm - Film</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">Prafilm</div>
+        <div class="nav-links">
+            <a href="index.php" class="active" style="color: white;">Film</a>
+            <a href="genre.php">Genre</a>
+            <a href="sutradara.php">Sutradara</a>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="form-card">
+            <div class="form-header">TITLE_FORM</div>
+            <div class="form-body">
+                <form method="POST" action="index.php">
+                    <input type="hidden" name="id" value="VALUE_ID">
+                    <div class="form-group">
+                        <label>Judul Film</label> 
+                        <input type="text" name="judul_film" value="VALUE_JUDUL" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tahun Rilis</label> 
+                        <input type="number" name="tahun_rilis" value="VALUE_TAHUN" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sutradara</label> 
+                        <select name="id_sutradara" required>
+                            <option value="">Pilih Sutradara</option>
+                            OP_SUTRADARA
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Genre</label> 
+                        <select name="id_genre" required>
+                            <option value="">Pilih Genre</option>
+                            OP_GENRE
+                        </select>
+                    </div>
+                    <button type="submit" name="BTN_ACTION" class="btn-submit">BTN_TEXT</button>
+                    BTN_CANCEL
+                </form>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header">Film List</div>
+            <div class="table-body">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Judul</th>
+                        <th>Tahun Rilis</th>
+                        <th>Sutradara</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                    DATA_FILM
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
