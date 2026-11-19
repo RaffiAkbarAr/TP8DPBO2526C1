@@ -13,7 +13,6 @@ Program ini dirancang menggunakan konsep pemrograman berorientasi objek (OOP) da
 ### A. Struktur folder dan Arsitektur (MVC)
 
 ```
-├── Dokumentasi/                # Tangkapan layar dokumentasi aplikasi
 ├── config.php                  # Konfigurasi koneksi database
 ├── db_bioskop                  # database yang dipakai        
 ├── index.php                   # Entry point utama (Halaman daftar Film)
