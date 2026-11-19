@@ -14,7 +14,8 @@ Program ini dirancang menggunakan konsep pemrograman berorientasi objek (OOP) da
 
 ```
 ├── Dokumentasi/                # Tangkapan layar dokumentasi aplikasi
-├── config.php                  # Konfigurasi koneksi database             
+├── config.php                  # Konfigurasi koneksi database
+├── db_bioskop                  # database yang dipakai        
 ├── index.php                   # Entry point utama (Halaman daftar Film)
 ├── genre.php                   # Entry point untuk halaman Genre
 ├── sutradara.php               # Entry point untuk halaman Sutradara
