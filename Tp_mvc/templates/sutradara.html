@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Prafilm - Sutradara</title>
+    
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f6f9; }
+            .navbar { background-color: #212529; padding: 15px 30px; display: flex; align-items: center; color: white; }
+            .nav-brand { font-weight: bold; font-size: 20px; color: white; margin-right: 30px; }
+            .nav-links a { color: #adb5bd; text-decoration: none; margin-right: 20px; font-weight: 500; font-size: 15px; }
+            .nav-links a:hover, .nav-links a.active { color: white; }
+            .main-container { display: flex; padding: 30px; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+
+            .form-card { flex: 1; min-width: 300px; background: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+            .form-header { background-color: #0d6efd; color: white; padding: 15px 20px; font-size: 18px; font-weight: 500; }
+            .form-body { padding: 20px; }
+            .form-group { margin-bottom: 15px; }
+            .form-group label { display: block; margin-bottom: 5px; font-size: 14px; color: #333; }
+            .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; background-color: #eaf0f6; font-family: inherit; color: #333; outline: none; }
+            .form-group input:focus, .form-group select:focus { border-color: #0d6efd; }
+            .btn-submit { background-color: #198754; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 15px; width: 100%; font-weight: 500; margin-top: 10px;}
+            .btn-submit:hover { background-color: #157347; }
+            .btn-cancel { background-color: #6c757d; color: white; text-align: center; text-decoration:none; display:block; padding: 10px 20px; border-radius: 4px; font-size: 15px; width: 100%; font-weight: 500; margin-top: 10px; box-sizing: border-box;}
+            .btn-cancel:hover { background-color: #5c636a; }
+
+            .table-section { flex: 2.5; min-width: 500px; background: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+            .table-header { background-color: #212529; color: white; padding: 15px 20px; font-size: 18px; font-weight: 500; }
+            .table-body { padding: 20px; overflow-x: auto; }
+            table { width: 100%; border-collapse: collapse; }
+            th { padding: 12px; border-bottom: 2px solid #dee2e6; color: #212529; font-weight: bold; font-size: 14px; text-align: left; }
+            td { padding: 12px; border-bottom: 1px solid #dee2e6; font-size: 14px; color: #333; vertical-align: top;}
+            .action-buttons { display: flex; flex-direction: column; gap: 5px; align-items: flex-start; }
+            .btn-edit { background-color: #ffc107; color: #000; text-decoration: none; padding: 4px 10px; border-radius: 3px; font-size: 12px; text-align: center; }
+            .btn-delete { background-color: #dc3545; color: white; text-decoration: none; padding: 4px 10px; border-radius: 3px; font-size: 12px; text-align: center; }
+        </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">Prafilm</div>
+        <div class="nav-links">
+            <a href="index.php">Film</a>
+            <a href="genre.php">Genre</a>
+            <a href="sutradara.php" class="active" style="color: white;">Sutradara</a>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="form-card">
+            <div class="form-header">TITLE_FORM</div>
+            <div class="form-body">
+                <form method="POST" action="sutradara.php">
+                    <input type="hidden" name="id" value="VALUE_ID">
+                    <div class="form-group">
+                        <label>Nama Sutradara</label> 
+                        <input type="text" name="nama_sutradara" value="VALUE_NAMA" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Negara</label> 
+                        <input type="text" name="negara" value="VALUE_NEGARA" required>
+                    </div>
+                    <button type="submit" name="BTN_ACTION" class="btn-submit">BTN_TEXT</button>
+                    BTN_CANCEL
+                </form>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header">Sutradara List</div>
+            <div class="table-body">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Sutradara</th>
+                        <th>Negara</th>
+                        <th>Actions</th>
+                    </tr>
+                    DATA_SUTRADARA
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
